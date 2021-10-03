@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <link rel="icon" href="https://github.com/UvinduBro/Button-Generator/blob/main/telegram-logo-AD3D08A014-seeklogo.com.png" type="image/jpg" sizes="16x16">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telegram Button Generator 💻</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/9e475f2b07.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body><br><br><br>
+  <div id="main">
+    <h1 align="center">Telegram Button Generator</h1>
+    <div id="rose-button">
+      <div id="rose-wrapper">
+        <div class="group">
+          <div class="button-info">
+            <div class="button-input">
+              <label for="button-name-1">Button Name</label>
+              <input type="text" name="button-name-1" id="button-name-1" />
+            </div>
+            <div class="button-input">
+              <label for="data-1">Button Link</label>
+              <input type="text" name="text-1" id="data-1" />
+            </div>
+          </div>
+          <div class="options">
+            <div class="button-sameline">
+              <input type="checkbox" class="sameline-switch" name="sameline-toggle-1" id="sameline-toggle-1" disabled />
+              <label class="sameline-tag" for="sameline-toggle-1">Same Line<span class="sameline-checkbox"></span></label>
+            </div>
+            <div class="button-type">
+              <input type="checkbox" name="type-toggle-1" id="type-toggle-1" />
+              <label for="type-toggle-1">
+                <div class="button-type-switch" data-checked="Note" data-unchecked="Link"></div>
+              </label>
+            </div>
+            <div class="button-delete">
+              <button onclick="removeButton(this)" id="delete-1" class="delete-rose-button" style="color: grey;"><i class="far fa-trash-alt"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="button-form-actions">
+        <button type="button" onclick="addButton()" class="add-button">Create New Button</button>
+        <button type="button" onclick="generateButtonCode()">Generate Code</button>
+      </div>
+    </div>
+    </section>
+    <section id="button-form-output">
+      <div class="button-output-header">
+        <h2>Generated Button Code</h2>
+        <div class="copy" onclick="copyCode()">
+          <i class="far fa-copy"></i>
+        </div>
+      </div>
+      <div id="button-output"></div>
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <p>© 2021 <a href="https://www.uvindubro.tk/">Uvindu Bro.</a> All Rights Reserved</p>
+        </div>
+      </footer>
+  </div>
+</body>
+
+</html>
